@@ -17,4 +17,20 @@
     <h2><a target="_blank" href="http://angularjs.blogspot.ca/">Angular blog</a></h2>
   </li>
 </ul>
+<div class="container">
+  <nav class="nav">
+    <div class="nav-left">
+      <a class="nav-item" routerLinkActive="active" routerLink="/">Home</a>
+    </div>
 
+    <div id="nav-menu" class="nav-right nav-menu">
+      <a class="nav-item" routerLinkActive="active" routerLink="/heroes">
+        Heroes
+      </a>
+      <a class="nav-item" routerLinkActive="active" routerLink="/about">
+        About
+      </a>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+</div>
